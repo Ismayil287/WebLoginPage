@@ -26,11 +26,27 @@
             <asp:ListItem  Value="+213"> +213 </asp:ListItem>
             <asp:ListItem  Value="+55"> +55 </asp:ListItem>
             </asp:DropDownList>
-            <asp:TextBox  CssClass="txtphone" placeholder="Phone" runat="server" />
-            <h3 class="gender">Gender:</h3>      
-            <asp:RadioButton  runat="server"  Text="Male" />
-            <asp:RadioButton  runat="server"  Text="Female"  />
-            <asp:RadioButton  runat="server"  Text="Others"/>
+            <asp:TextBox  CssClass="txtphone" placeholder="Phone" runat="server" />   
+            <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1"/>
+          <input type="radio" name="gender" id="dot-2"/>
+          <input type="radio" name="gender" id="dot-3"/>
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Other</span>
+            </label>
+          </div>
+        </div>
             <div class ="linkregister">
             <asp:LinkButton Text="Register Here" CssClass ="linkregister"  runat="server" />
             </div>
